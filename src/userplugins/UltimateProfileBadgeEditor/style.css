@@ -1,0 +1,38 @@
+.vc-upbe-preview {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    min-height: 40px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: var(--background-secondary);
+}
+
+.vc-upbe-preview-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.vc-upbe-preview-empty {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.vc-upbe-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.vc-upbe-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vc-upbe-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}

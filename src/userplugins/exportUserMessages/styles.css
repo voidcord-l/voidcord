@@ -1,0 +1,193 @@
+/* ── Export User Messages Plugin ── */
+
+.epm-content {
+    padding: 14px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.epm-scope-row {
+    display: flex;
+    gap: 6px;
+}
+
+.epm-scope-btn {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    padding: 8px 6px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.1s;
+}
+
+.epm-scope-btn:hover {
+    border-color: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.epm-scope-btn--active {
+    border-color: var(--brand-500, #5865f2);
+    background: rgba(88, 101, 242, 0.15);
+}
+
+.epm-target-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 8px;
+    padding: 8px 10px;
+}
+
+.epm-target-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.epm-target-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    min-width: 0;
+}
+
+.epm-target-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.epm-target-channel {
+    font-size: 11px;
+    color: #949ba4;
+}
+
+.epm-label {
+    margin: 0 !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.epm-format-row,
+.epm-image-row {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.epm-format-btn {
+    flex: 1;
+    min-width: 60px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    padding: 8px 6px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    transition: all 0.1s;
+}
+
+.epm-format-btn:hover {
+    border-color: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.epm-format-btn--active {
+    border-color: var(--brand-500, #5865f2);
+    background: rgba(88, 101, 242, 0.15);
+}
+
+.epm-fmt-key {
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.epm-fmt-desc {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.epm-image-btn {
+    flex: 1;
+    min-width: 100px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #fff;
+    transition: all 0.1s;
+}
+
+.epm-image-btn:hover {
+    border-color: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.epm-image-btn--active {
+    border-color: var(--brand-500, #5865f2);
+    background: rgba(88, 101, 242, 0.15);
+}
+
+.epm-asset-toggle {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+    user-select: none;
+    line-height: 1.4;
+}
+
+.epm-asset-toggle input[type="checkbox"] {
+    accent-color: var(--brand-500, #5865f2);
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.epm-status {
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.epm-status--fetching { background: rgba(250, 166, 26, 0.12); color: #faa61a; }
+.epm-status--done     { background: rgba(59, 165, 92, 0.12); color: #3ba55c; }
+.epm-status--error    { background: rgba(237, 66, 69, 0.12); color: #ed4245; }
+
+.epm-export-btn {
+    background: var(--brand-500, #5865f2);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 11px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: opacity 0.15s;
+}
+
+.epm-export-btn:hover { opacity: 0.85; }
+.epm-export-btn:disabled { opacity: 0.4; cursor: not-allowed; }

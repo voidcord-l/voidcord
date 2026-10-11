@@ -1,0 +1,47 @@
+.vc-betterinbox-synth-line {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.vc-betterinbox-reaction-emoji {
+    height: 1.1em;
+    width: 1.1em;
+    vertical-align: middle;
+}
+
+.vc-betterinbox-caught-up {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.vc-betterinbox-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 16px;
+    height: 16px;
+    padding: 0 4px;
+    margin-left: 6px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 16px;
+    background: var(--status-danger);
+    color: #fff;
+    vertical-align: middle;
+}
+
+.vc-betterinbox-reply-quote {
+    display: block;
+    padding-left: 8px;
+    margin-top: 4px;
+    border-left: 3px solid var(--background-modifier-accent);
+    color: var(--text-muted);
+    font-size: 0.9em;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
