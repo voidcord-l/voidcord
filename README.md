@@ -1,4 +1,4 @@
-# VoidCord
+# <img src="https://avatars.githubusercontent.com/u/340958005?s=60&v=4" width="40" align="center" /> VoidCord
 
 VoidCord est un mod de client Discord basé sur [Equicord](https://github.com/Equicord/Equicord), lui-même un fork de [Vencord](https://github.com/Vendicated/Vencord). Il ajoute un système de plugins à Discord (bureau et navigateur) et embarque un ensemble de plugins personnalisés.
 
