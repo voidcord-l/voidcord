@@ -5,7 +5,7 @@
     "private": true,
     "description": "VoidCord is a custom Discord desktop app",
     "keywords": [],
-    "homepage": "https://github.com/",
+    "homepage": "https://github.com/voidcord-l/VoidCord",
     "license": "GPL-3.0-or-later",
     "author": "VoidCord",
     "main": "dist/js/main.js",
@@ -98,7 +98,7 @@
         "linux": {
             "icon": "build/icon.svg",
             "category": "Network",
-            "maintainer": "contact@equicord.org",
+            "maintainer": "contact@ozgur.lat",
             "target": [
                 {
                     "target": "deb",
