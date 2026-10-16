@@ -1,0 +1,53 @@
+:is([class*="userProfile"], [class*="userPopout"]) [class*="bannerPremium"] {
+    background: center / cover no-repeat;
+}
+
+[class*="NonPremium"]:has([class*="bannerPremium"]) [class*="avatarPositionNormal"],
+[class*="PremiumWithoutBanner"]:has([class*="bannerPremium"]) [class*="avatarPositionPremiumNoBanner"] {
+    top: 76px;
+}
+
+[style*="background-image"] [class*="background_"] {
+    background-color: transparent !important;
+}
+
+.vc-fpt-preview * {
+    pointer-events: none;
+}
+
+.vc-nameplated-container {
+    position: relative !important;
+    isolation: isolate !important;
+}
+
+.vc-custom-nameplate-container {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: var(--radius-sm);
+    overflow: hidden !important;
+    pointer-events: none !important;
+    opacity: 0.8;
+    -webkit-mask-image: linear-gradient(to right, transparent 20%, #fff);
+    mask-image: linear-gradient(to right, transparent 20%, #fff);
+}
+
+.vc-custom-nameplate-video-container {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.vc-custom-nameplate-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.vc-nameplated {
+    position: relative !important;
+    z-index: 1 !important;
+}

@@ -1,0 +1,16 @@
+/* content-visibility ╪ú┘Å╪▓┘è┘ä: ┘à┘Å┘é╪╖┘É┘æ╪╣ ╪»┘è╪│┘â┘ê╪▒╪» ╪º┘ä╪º┘ü╪¬╪▒╪º╪╢┘è (virtualized scroller) ┘è┘Å╪«╪╖╪ª ┘é┘è╪º╪│
+ * ╪º┘ä╪╡┘ü┘ê┘ü ╪º┘ä┘à╪¡╪¬┘ê╪º╪⌐ ╪¿╪╣╪» ╪¬╪¡╪»┘è╪½╪º╪¬┘ç╪î ┘ü┘è╪│╪¿┘æ╪¿ ┘é┘ü╪▓ ╪º┘ä╪¬┘à╪▒┘è╪▒ ╪╣┘å╪» ╪º┘ä┘à╪▒┘ê╪▒ ╪╣┘ä┘ë ╪º┘ä╪▒╪│╪º┘ä╪⌐ ┘ê┘é╪╡┘æ ╪┤╪▒┘è╪╖
+ * ╪º┘ä╪ú╪»┘ê╪º╪¬. ┘å┘Å╪¿┘é┘è ┘ü┘é╪╖ ╪▒┘ü╪╣ ╪º┘ä╪╖╪¿┘é╪⌐ (z-index) ┘â┘è ┘ä╪º ┘è┘Å┘é╪╡┘æ ╪┤╪▒┘è╪╖ ╪º┘ä╪ú╪»┘ê╪º╪¬ ╪¬╪¡╪¬ ╪º┘ä╪▒╪│╪º┘ä╪⌐ ╪º┘ä╪ú╪╣┘ä┘ë. */
+
+[--messageListItem]:hover,
+[--messageListItem]:focus-within {
+    position: relative;
+    z-index: 2;
+}
+
+[--messageListItem]:hover + [--messageListItem],
+[--messageListItem]:focus-within + [--messageListItem],
+[--messageListItem]:has(+ [--messageListItem]:hover),
+[--messageListItem]:has(+ [--messageListItem]:focus-within) {
+    z-index: 1;
+}

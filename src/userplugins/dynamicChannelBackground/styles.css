@@ -1,0 +1,39 @@
+/*
+ * Fond injecté par le patch dans le conteneur chat.
+ * Pas de z-index — l'ordre DOM suffit : les layers sont insérés en premier (toSpliced(0,0,...)),
+ * le scroller vient après et s'affiche naturellement par-dessus.
+ */
+
+.vc-dynbg-image-layer,
+.vc-dynbg-overlay-layer {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.vc-dynbg-fade-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Masquer le gradient natif Discord — remplacé par vc-dynbg-fade-layer */
+[class*="messagesWrapper_"] [class*="floatingBars_"] {
+    display: none !important;
+}
+
+[class*="messagesWrapper_"],
+[class*="managedReactiveScroller_"] {
+    position: relative !important;
+    background: transparent !important;
+}
+
+/* Hover sur les messages quand le fond est actif */
+.vc-dynbg-active li[class*="messageListItem_"]:hover {
+    background: rgb(79 84 92 / 16%) !important;
+    border-radius: 0 !important;
+}
